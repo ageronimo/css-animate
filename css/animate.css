@@ -1,0 +1,73 @@
+@keyframes rotation {
+  from{transform: rotate(0deg);}
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes skew {
+  from{transform: skewX(0deg);}
+  to{transform: skewX(-25deg);}
+}
+
+@keyframes multiAni {
+  20% {
+    background-color: red;
+  }
+  40% {
+    transform: rotate(360deg);
+    background-color: orange;
+  }
+  60% {
+    transform: translate(200px, 0px);
+    background-color: yellow;
+  }
+  80% {
+    transform: rotate(-360deg);
+    background-color: green;
+  }
+  90% {
+    transform: translate(400px, 0px);
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+@keyframes final {
+  0% {
+    background-color: salmon;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+  90% {
+    transform: rotate(360deg);
+    background-color: pink;
+  }
+}
+/*name, duration, iteration*/
+
+#rotate {
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#skew {
+  animation-name: skew;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#all {
+  animation-name: multiAni;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#animate {
+  animation-name: final;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
